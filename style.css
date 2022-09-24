@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;300;400;500;600;700&family=Alumni+Sans+Collegiate+One&family=Bangers&family=Bebas+Neue&family=Blaka+Hollow&family=Bungee+Shade&family=Caveat:wght@700&family=Creepster&family=Dawning+of+a+New+Day&family=DynaPuff&family=Fredoka+One&family=Gloria+Hallelujah&family=Great+Vibes&family=Inconsolata:wght@200&family=Inspiration&family=Josefin+Sans:wght@300&family=Kanit:wght@100&family=Marck+Script&family=Mukta:wght@400;700;800&family=Pacifico&family=Permanent+Marker&family=Poppins:ital,wght@0,500;1,400;1,500&family=Roboto+Mono&family=Rubik+Burned&family=Rubik+Distressed&family=Satisfy&family=Shadows+Into+Light&family=Silkscreen&family=Splash&family=VT323&family=Yellowtail&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./skyBg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: -10000;
+}
+nav{
+    background-color: white;
+    width: 70vw;
+    height: 8vh;
+    margin:8vh  auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0.3vmax;
+}
+
+nav>a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    /* border: 1px solid black; */
+    height: 8vh;
+    width: 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 0.3vh;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+#c{
+    color: crimson;
+}
+.highLighter{
+    background-color: crimson;
+    height: 10vh;
+    width: 12vw;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.5s;
+
+}
+.arrow{
+    clip-path: polygon(50% 21%, 0 0, 100% 0); 
+    background-color: crimson;
+    position: absolute;
+    top: 8vh;
+    width: 1.5vw;
+    height: 2vh;
+    transition: all 0.5s;
+}
+
+
+/* Home section */
+
+
+#home{
+    /* background-color: rgba(220, 20, 60, 0.312); */
+    height: 60vh;
+    display: flex;
+
+}
+.left{
+    width: 60vw; 
+    padding: 4vw;
+    box-sizing: border-box;
+    /* background-color: rgba(0, 139, 139, 0.729); */
+
+}
+.left>h1{
+    font-family: 'Creepster', cursive;
+    font-size: 4vmax;
+    color: crimson;
+}
+.left>p{
+    font-family: 'VT323', monospace;
+    font-size: 2vmax;
+    color: white;
+}
+.left>button{
+    border: none;
+    background-color: rgba(195, 5, 81, 0.515);
+    outline: none;
+    padding:1vmax 3vmax;
+    border-radius: 3vmax;
+    font-family: 'Roboto Mono', monospace;
+    color: aliceblue;
+    margin-right: 2vmax;
+    margin-top: 2vmax;
+    transition: all .5s;
+    cursor: pointer;
+    float: right;
+}
+.left>button:hover{
+    background-color: rgba(195, 5, 81, 0.6);
+}
+.right{
+    width: 40vw;
+    padding: 4vmax;
+    box-sizing: border-box;
+    /* background-color: rgba(115, 89, 131, 0.577); */
+}
+.right>img{
+    width: 100%;
+    /* height: 100%; */
+    opacity: 0.6;
+
+}
+
+
+/* Anime Section */
+
+#Anime{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#Anime>h1{
+    font-family: 'Creepster', cursive;
+    font-size: 4vmax;
+    color: rgb(139, 224, 237);
+    text-align: center;
+    width: 30vw;
+    margin:8vmax ;
+    border-bottom: 4px solid crimson;
+}
+
+.animesBox{
+    background-color: white;
+    /* height: 80vh; */
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.aBox{
+    box-sizing: border-box;
+    width:22vw ;
+    /* height: 40vh; */
+    margin: 2vmax;
+    transition: all .5s;
+    box-shadow: 0px 0px 15px black;
+    background-color: black;
+    color: whitesmoke;
+    border-bottom: 2px solid rgb(17, 1, 8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+.aBox:hover{
+    transform: translateY(-10px);
+}
+.aBox>img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 2vmax; */
+}
+.aBox>a>h2{
+    margin-top: 2vmax;
+    text-align: center;
+    font-family: 'Rubik Burned', cursive;
+    font-size: 1.5vmax;
+    color: white;
+}
+
+
+.overview{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(228, 30, 30);
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+}
+
+
+/* From uiverse.io by @mobinkakei */
+.bottom{
+    margin: 13px;
+    display: flex;
+    justify-content: center;
+   }
+.loader {
+    --path: #fbfcff;
+    --dot: #5628ee;
+    --duration: 3s;
+    width: 44px;
+    height: 44px;
+    position: relative;
+  }
+  
+  .loader:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    background: var(--dot);
+    top: 37px;
+    left: 19px;
+    transform: translate(-18px, -18px);
+    animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .loader svg rect, .loader svg polygon, .loader svg circle {
+    fill: none;
+    stroke: var(--path);
+    stroke-width: 10px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+  
+  .loader svg polygon {
+    stroke-dasharray: 145 76 145 76;
+    stroke-dashoffset: 0;
+    animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader svg rect {
+    stroke-dasharray: 192 64 192 64;
+    stroke-dashoffset: 0;
+    animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader svg circle {
+    stroke-dasharray: 150 50 150 50;
+    stroke-dashoffset: 75;
+    animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader.triangle {
+    width: 48px;
+  }
+  
+  .loader.triangle:before {
+    left: 21px;
+    transform: translate(-10px, -18px);
+    animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  @keyframes pathTriangle {
+    33% {
+      stroke-dashoffset: 74;
+    }
+  
+    66% {
+      stroke-dashoffset: 147;
+    }
+  
+    100% {
+      stroke-dashoffset: 221;
+    }
+  }
+  
+  @keyframes dotTriangle {
+    33% {
+      transform: translate(0, 0);
+    }
+  
+    66% {
+      transform: translate(10px, -18px);
+    }
+  
+    100% {
+      transform: translate(-10px, -18px);
+    }
+  }
+  
+  @keyframes pathRect {
+    25% {
+      stroke-dashoffset: 64;
+    }
+  
+    50% {
+      stroke-dashoffset: 128;
+    }
+  
+    75% {
+      stroke-dashoffset: 192;
+    }
+  
+    100% {
+      stroke-dashoffset: 256;
+    }
+  }
+  
+  @keyframes dotRect {
+    25% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(18px, -18px);
+    }
+  
+    75% {
+      transform: translate(0, -36px);
+    }
+  
+    100% {
+      transform: translate(-18px, -18px);
+    }
+  }
+  
+  @keyframes pathCircle {
+    25% {
+      stroke-dashoffset: 125;
+    }
+  
+    50% {
+      stroke-dashoffset: 175;
+    }
+  
+    75% {
+      stroke-dashoffset: 225;
+    }
+  
+    100% {
+      stroke-dashoffset: 275;
+    }
+  }
+  
+  .loader {
+    display: inline-block;
+    margin: 0 16px;
+  }
+  
+   
