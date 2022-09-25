@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form| Design</title>
+    <link rel="stylesheet" href="/style/style08.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+}
+form{
+    max-width: 800px;
+    /* border: 2px solid red; */
+    margin: auto;
+    background-color: rgba(223, 223, 223, 0.801);
+    padding: 20px;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form>div{
+    margin: 10px 0px;
+    
+}
+h1{
+    text-align: center;
+    margin: 30px 0px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select,
+textarea{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+fieldset{
+    box-sizing: border-box;
+    padding: 17px;
+    width: 100%;
+}
+fieldset>legend{
+    color: rgb(24, 23, 23);
+}
+fieldset>input{
+    margin: 0px 12px;
+}
+
+button{
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    background-color: hsl(11deg 100% 62%);
+    font-weight: 700;
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+button:hover{
+    
+    background-color: rgba(255, 97, 61, 0.851);
+}
+    </style>
+</head>
+<body>
+    
+
+   
+
+    <form action="">
+        <h1>CONTACT US</h1>
+        <hr>
+        <div>
+            <label for="name">Name</label>
+        <input type="text" required id="name" name="username" placeholder="Enter Your Name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" required id="email" name="useremail" placeholder="Enter Your Email">
+        </div>
+        <br>
+        <div>
+            <label for="msg">Message</label>
+            <textarea required name="usermessage" id="msg" cols="30" rows="10" placeholder="write some message for us"></textarea>
+        </div>
+        <br>
+       
+
+        <br>
+        <div>
+            <label for="Gnder">Gender:</label>
+
+            <select required name="gender" id="">
+                <option value="" selected disabled >--choose one--</option>
+                <option value="male">Male</option>
+                <option value="female">FeMale</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+       
+
+        <br>
+
+        <div>
+            <button onclick="print()">SUBMIT</button>
+        </div>
+    </form>
+</body>
+</html>
