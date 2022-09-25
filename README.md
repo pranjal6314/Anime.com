@@ -42,7 +42,7 @@ get facts about them.
 To deploy this project run
 
 ```bash
-  clone this repo to your local system and run index.html file and make sure you have active internet connection for data fatching from api .
+  clone this repository to your local system and run index.html file and make sure you have active internet connection for data fatching from api .
 ```
 
 
